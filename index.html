@@ -12,17 +12,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
         font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0oT
         92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin = "anonymous" referrerpolicy="no-referrer"/>
+
+    <script>
+        function scifunc () {
+            alert("Hello");
+             }
+
+        function openPdf() {
+            var omyFrame = document.getElementById("myFrame");
+            omyFrame.style.display="block";
+            omyFrame.src = "css/p.pdf";}
+    </script>
 </head>
 
 <body>
+    
     <div class="hero">
         <nav>
             <ul>
                <li><a href="#">Home</a></li>
-               <li><a href="#">Cool things I've Done</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Skills</a></li>
-               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">About Me</a></li>
+               <li><a href="#">Cool things I've Done</a></li>               
             </ul>
         </nav>
 
@@ -50,15 +60,27 @@
     <!---Cool stuff i've done-->
     <section class="cool">
         <div class="main2">
-            <div class="cool-text">
-                <h2> Cool Stuff I've Done</h2>
+            <div class="grid-container">
+                <div class="content_img" onclick="location.href='https://colab.research.google.com/drive/1cs07PZPDAaujTyQagHYyxK6bDqYLVyu3?usp=sharing'">
+                    <img src="css/twitter.png" width=480 height=300 />
+                    <div style="white-space: pre-wrap;">Natural Language Processing Project,&#10;&#10;&#10; In this project I ...</div>
+                </div>
+                <div class="content_img" onclick="window.open(openPdf());">
+                    <img src="css/covid.png" width=480 height=300 />
+                    <div style="white-space: pre-wrap;">Natural Language Processing Project,&#10;&#10;&#10; In this project I ...</div>
+                </div>
+                <iframe id="myFrame" style="display:none" width="600" height="300"></iframe>
+                <!---<button class="btn2 big-btn"></button>
+                <button class="btn2 big-btn"></button>
                 <button class="btn2 big-btn"></button>
                 <button class="btn2 big-btn"></button>
                 <button class="btn2 big-btn"></button>
                 <button class="btn2 big-btn"></button>
             </div>
-
         </div>
+        
+    </div>
+       
     </section>
 
 </body>

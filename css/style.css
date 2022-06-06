@@ -33,7 +33,7 @@ span{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px  25px;
+    padding: 0px  25px;
     
 }
 nav ul li a{
@@ -130,28 +130,78 @@ button{
 }
 .cool-text{
     width: 550px;
+    text-align: center;
 }
 .main2{
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+   
 }
+
 .btn2 {
     background-color: #a2d2ff;
     border: none;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 100px;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 12px;
     display: inline;
   }
   .big-btn {
-    width: 720px;
-    height: 320px;
+    width: 480px;
+    height: 300px;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(2, 320px);
+    grid-gap: 10px;
+}
+/* Parent Container */
+.content_img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 10px;
+   }
+   
+   /* Child Text Container */
+   .content_img div{
+    position: absolute;
+    bottom: -105px;
+    right: -280px;
+    background: black;
+    color: white;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 50px 0 50px;
+    opacity: 0;
+    visibility: hidden;
+    /*font-weight: bold;*/
+    text-align: center;
+    /*border-radius: 12px;*/
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+   }
+   
+   /* Hover on Parent Container */
+   .content_img:hover{
+    cursor: pointer;
+   }
+   
+   .content_img:hover div{
+    width: 480px;
+    height: 300px;
+    /*padding: 8px 15px;*/
+    visibility: visible;
+    opacity: 0.8; 
+   }
