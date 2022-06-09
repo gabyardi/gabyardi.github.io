@@ -20,6 +20,8 @@ nav{
     padding-left: 8%;
     padding-right: 8%;
     text-align: center;
+    transition: top 0.3s;
+    position: fixed;
 }
 .logo{
     color: black;
@@ -47,6 +49,8 @@ nav ul li a:hover{
     color: #a2d2ff;
     transition: .4s;
 }
+
+
 .btn{
     background-color: #1e96fc;
     color: white;
@@ -177,7 +181,7 @@ button{
    /* Child Text Container */
    .content_img div{
     position: absolute;
-    bottom: -105px;
+    bottom: -110px;
     right: -280px;
     background: black;
     color: white;
