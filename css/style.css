@@ -11,15 +11,21 @@
     background-color: #fff;
     background-size: cover;
     background-position: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 nav{
     display:flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    border-radius: 15px;  
+    z-index:1; /*Add this*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1%;
+    padding-right: 40%;
     text-align: center;
     transition: top 0.3s;
     position: fixed;
@@ -133,6 +139,7 @@ button{
     padding: 100px 0px;
     background-color: #FFF;
 }
+
 .cool-text{
     width: 550px;
     text-align: center;
@@ -168,7 +175,7 @@ button{
     display: grid;
     grid-template-columns: repeat(2, 500px);
     grid-template-rows: repeat(2, 320px);
-    grid-gap: 10px;
+    grid-gap: 40px;
 }
 /* Parent Container */
 .content_img{
@@ -210,3 +217,6 @@ button{
     visibility: visible;
     opacity: 0.8; 
    }
+
+ 
+    
